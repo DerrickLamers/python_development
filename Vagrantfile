@@ -3,6 +3,9 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = 'python-development'
 
   config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  # X-forwarding
+  config.ssh.forward_x11 = true
   10.times do |n|
     config.vm.network 'forwarded_port',
                       guest: 3000 + n,
