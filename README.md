@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A portable virtual development environment.
+A portable virtual development environment for Python3.
 
 ## Requirements
 
